@@ -1,0 +1,48 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #667eea, #764ba2);
+
+}
+h1{
+    text-align: center;
+    background-color: white;
+    color: black;
+    padding: 20px;
+}
+
+.quiz-box {
+    background: white;
+    width: 400px;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 10px 25px black;
+    text-align: center;
+}
+
+.option-btn {
+    display: block;
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #2d3748;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+
+}
+
+.option-btn:hover {
+    background-color: #1a202c;
+}
+
+button {
+    margin: 15px;
+    padding: 8px 15px;
+    border: none;
+    background-color: #48bb78;
+    color: white;
+    border-radius: 6px;
+    cursor: pointer;
+}
