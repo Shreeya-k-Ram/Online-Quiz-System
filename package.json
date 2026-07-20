@@ -1,0 +1,28 @@
+{
+  "name": "online-quiz-system",
+  "version": "1.0.0",
+  "description": "Online Quiz System",
+  "main": "game.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Shreeya-k-Ram/Online-Quiz-System.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "bugs": {
+    "url": "https://github.com/Shreeya-k-Ram/Online-Quiz-System/issues"
+  },
+  "homepage": "https://github.com/Shreeya-k-Ram/Online-Quiz-System#readme",
+  "dependencies": {
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
+  }
+}
