@@ -1,3 +1,4 @@
+const db = require("./config/db");
 const express = require("express");
 const app = express();
 const quizRoutes = require("./routes/quizRoutes");
