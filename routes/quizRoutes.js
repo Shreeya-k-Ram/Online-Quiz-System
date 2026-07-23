@@ -1,10 +1,13 @@
 const express = require("express");
 const router = express.Router();
 
-router.get("/questions", (req, res) => {
-    res.json({
-        message: "Questions API is working"
-    });
-});
+const {
+    getQuestions,
+    createQuestion
+} = require("../controllers/questionController");
+
+router.get("/questions", getQuestions);
+
+router.post("/questions", createQuestion);
 
 module.exports = router;

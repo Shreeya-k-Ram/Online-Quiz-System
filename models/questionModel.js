@@ -28,7 +28,41 @@ const addQuestion = (question, callback) => {
     );
 };
 
+// Update Question
+const updateQuestion = (id, question, callback) => {
+    const sql = `
+        UPDATE questions
+        SET question=?, option1=?, option2=?, option3=?, option4=?, correct_answer=?
+        WHERE id=?
+    `;
+
+    db.query(
+        sql,
+        [
+            question.question,
+            question.option1,
+            question.option2,
+            question.option3,
+            question.option4,
+            question.correct_answer,
+            id
+        ],
+        callback
+    );
+};
+
+// Delete Question
+const deleteQuestion = (id, callback) => {
+    db.query(
+        "DELETE FROM questions WHERE id=?",
+        [id],
+        callback
+    );
+};
+
 module.exports = {
     getAllQuestions,
-    addQuestion
+    addQuestion,
+    updateQuestion,
+    deleteQuestion
 };
