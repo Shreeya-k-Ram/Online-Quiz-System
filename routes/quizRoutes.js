@@ -11,3 +11,14 @@ router.get("/questions", getQuestions);
 router.post("/questions", createQuestion);
 
 module.exports = router;
+
+const {
+    getQuestions,
+    createQuestion,
+    updateQuestion,
+    deleteQuestion
+} = require("../controllers/questionController");
+
+router.put("/questions/:id", updateQuestion);
+
+router.delete("/questions/:id", deleteQuestion);

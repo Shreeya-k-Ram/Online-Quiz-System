@@ -4,6 +4,8 @@ const app = express();
 const quizRoutes = require("./routes/quizRoutes");
 const PORT = 3000;
 const adminRoutes = require("./routes/adminRoutes");
+const resultRoutes = require("./routes/resultRoutes");
+
 
 app.use(express.json());
 app.use("/api", quizRoutes);
@@ -17,3 +19,5 @@ app.listen(PORT, () => {
 });
 
 addEventListener.user("/api/admin", adminRoutes);
+
+app.use("/api/result", resultRoutes);
